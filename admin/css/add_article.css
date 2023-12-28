@@ -1,0 +1,127 @@
+
+/* Styles pour diviser les champs du formulaire */
+.add_article_form {
+    width: 75%;
+    margin-top:5%;
+    margin-left: 5%;
+    padding: 20px; 
+    position:fixed;
+}
+
+.form_group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.field {
+    width: 48%; /* Divise chaque champ en 48% de large */
+}
+.field label:not(.lab){
+    font-weight:bold;
+}
+
+
+.field input[type="text"],
+.field input[type="number"],
+.field input[type="file"],
+.field input[type="text"]:focus,
+.field input[type="number"]:focus,
+.field input[type="file"]:focus,
+.field input[type="text"]:active,
+.field input[type="number"]:active,
+.field input[type="file"]:active,
+.field input[type="text"]:hover,
+.field input[type="number"]:hover,
+.field input[type="file"]:hover {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    
+    outline: none; /* Retire le contour de focus */
+}
+
+.field input[type="file"] {
+    padding: 5px;
+    cursor: pointer; /* Indique que c'est un champ cliquable */
+}
+
+.field input[type="file"]::-webkit-file-upload-button {
+    padding: 5px;
+    border: none;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color:whitesmoke;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.field select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(246, 244, 210, 0.893);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none; /* Retire le contour de focus */
+    background-color: white; /* Fond blanc */
+    font-size: 16px; /* Taille de police */
+}
+
+.field select:focus,
+.field select:active,
+.field select:hover {
+    border-bottom: 1px solid rgba(246, 244, 210, 0.893);}
+
+
+.field select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(246, 244, 210, 0.893);
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    outline: none; /* Retire le contour de focus */
+    background-color: white; /* Fond blanc */
+    font-size: 16px; /* Taille de police */
+    transition: border-color 0.3s; /* Transition pour l'animation */
+}
+
+
+
+
+
+.field label {
+    display: inline-block; /* Affiche les labels sur la même ligne */
+   
+    margin-bottom: 5px;
+}
+
+.field input[type="checkbox"] {
+    display: inline-block; /* Affiche les cases à cocher sur la même ligne */
+    margin-left:25px;
+    vertical-align: middle; 
+    font:20px;/* Alignement vertical au milieu */
+}
+
+.field label.checkbox-label {
+    margin-left: 5px;
+    font-weight: normal;
+}
+

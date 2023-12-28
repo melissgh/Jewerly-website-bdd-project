@@ -1,0 +1,1077 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Dancing Script', cursive;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+}
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px  75px; */
+    position: static;
+    background: whitesmoke;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    z-index: 999;
+    font-size: 20px;
+    background:  #e8e0d4;
+    background: whitesmoke; 
+
+}
+
+.navBar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.navBar ul li{
+    margin-left: 50px;
+}
+
+.navBar ul a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.61);
+    font-weight: bold;
+}
+
+.navBar ul a:hover{
+    cursor: pointer;
+    color: black;
+}
+
+
+.logo{
+    font-size: 30px;
+    color: orangered;
+    margin-left: 100px;
+    word-spacing: 5px;
+}
+
+.list2{
+    margin-right: 7%;
+}
+
+.fa-user,.fa-heart,.fa-cart-shopping{
+    margin-top: 5px;
+}
+
+.headerSearchBox{
+    color: rgba(0, 0, 0, 0.61);
+    margin-top: 2px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.headerSearchBox input{
+    outline: none;
+    color: rgba(0, 0, 0, 0.61);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+    padding: 5px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.61) ;
+    width: 230px;
+    transition: all .5s ease-in-out;
+    visibility: hidden;
+    
+}
+
+
+.headerSearchBox:hover  input {
+    /* Rend l'input visible au survol de .headerSearchBox */
+    visibility: visible;
+}
+
+.headerSearchBox button{
+    background: transparent;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.headerSearchBox button i{
+    color: rgba(0, 0, 0, 0.61) ;
+    font-size: 20px;
+    
+}
+
+
+.headerSearchBox button i:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.ItemSearchBox{
+    display: flex;
+    flex-direction: row;
+}
+
+.ItemSearchBox form {
+    display: flex;
+    align-items: center;
+}
+
+
+.searchInputItemName{
+    display: block;
+    padding-left: 5px;
+
+    padding-bottom: 5px;
+    border:none ;
+    border-bottom: solid 1px black;
+    outline: none;
+}
+
+.ItemSearchBox button {
+    background-color: green;
+}
+
+
+
+
+
+.backImg{
+    width: 100%;
+    height: 101vh;
+    margin-top:-10px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background:  #eadcd1;
+    background:  #e8e0d4;
+    background: whitesmoke;
+}
+
+.backImg .headerImg{
+    z-index: 1;
+    width: 60%;
+    height: 80%;
+    margin-top: 105px;
+    margin-left: -20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.backImg .headerImg .image{
+    width: 50%;
+    height: 100%;
+    background: green;
+    border-radius:45% 45% 0 0 ;
+    background-image: url(../pic/homepicpex5.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.backImg .headerImg .callToActionHeader{
+    margin-top: 25%;
+    margin-right: 6%;
+    width: 35%;
+}
+
+.backImg .headerImg .callToActionHeader button{
+    margin-top: 40px;
+    background: transparent;
+    border: solid 1px black;
+    padding: 5px 10px;
+}
+
+.backImg .headerImg .callToActionHeader button:hover{
+    cursor: pointer;
+}
+
+
+.backImg .headerImg .callToActionHeader p{
+    font-size: 20px;
+}
+
+
+.backImg .logo{
+    margin-top: 170px;
+    margin-left: -10px;
+    font-size: 70px;
+    z-index: 2;
+    
+}
+
+/* .backImg .callToActionHeader{
+    margin-top: 300px;
+    z-index: 3;
+    margin-left: 80px;
+} */
+
+
+
+
+
+                                    /*categories*/
+
+.categorie{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.categorieTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorieTitle h3{
+    font-size: 25px;
+    font-style: italic;
+}
+
+.categorieTitle p{
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.categorieArticles{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-top: 60px;
+}
+
+.collier{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/collierpex4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 0 0 40% 0;
+}
+
+.layer{
+    position: relative;
+    top: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 0 0 40% 0;
+}
+
+.layer:hover{
+    background: rgba(231, 221, 214, 0.7);
+    border-radius: 0 0 40% 0;
+    cursor: pointer;
+}
+
+
+.layer h3{
+    color: white;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 60%;
+    opacity: 1;
+}
+
+.layer button{
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    background: white;
+    color: black;
+    padding: 4px 10px;
+    border: none;
+}
+
+.layer:hover button{
+    bottom:45%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.collier:hover{
+    cursor: pointer;
+}
+
+.bag{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/bagueImgPxl.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 40% 40% 0 0;
+}
+
+#bagLayer{
+    border-radius: 40% 40% 0 0;
+}
+
+
+.bag:hover{
+    cursor: pointer;
+}
+
+.erring{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/earringpex5.jpeg);
+    background-image: url(../pic/earringPxl.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 40% 0 0 0;
+}
+
+#earringLayer{
+    border-radius: 40% 0 0 0;
+}
+
+.erring:hover{
+    cursor: pointer;
+}
+
+
+.bracellete{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/braceletImgPxl.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 40% 0 0 0;
+}
+
+#braceletLayer{
+    border-radius:40% 0 0 0 ;
+}
+
+.bracellete:hover{
+    cursor: pointer;
+}
+
+
+.loveAndEngagment{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/weddingRingpex1.jpeg);
+    background-image: url(../pic/pexelsEngagedRing.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 0 0 0 40%;
+}
+
+#engagmentLayer{
+    border-radius: 0 0 0 40%;
+}
+
+.loveAndEngagment:hover{
+    cursor: pointer;
+}
+
+
+
+
+.info{
+    width: 25%;
+    height: 45%;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p{
+    font-size: 17px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.info button{
+    background: none;
+    border: solid 1px black;
+    padding: 5px 15px;
+    margin-top: 15px;
+    font-family: normal;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.info button:hover{
+    cursor: pointer;
+    background: whitesmoke;
+}
+
+
+ /*categories*/
+ .categorie {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.categorieTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorieTitle h3 {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.categorieTitle p {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.categorieArticles {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-top: 60px;
+}
+.collier{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/collierpex4.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 0 0 40% 0;
+}
+
+.layer{
+    position: relative;
+    top: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    border-radius: 0 0 40% 0;
+}
+
+.layer:hover{
+    background: rgba(231, 221, 214, 0.7);
+    border-radius: 0 0 40% 0;
+    cursor: pointer;
+}
+
+.layer h3{
+    color: white;
+    font-size: 25px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 60%;
+    opacity: 1;
+}
+
+.layer button{
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+    background: white;
+    color: black;
+    padding: 4px 10px;
+    border: none;
+}
+
+.layer:hover button{
+    bottom: 45%;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.collier:hover{
+    cursor: pointer;
+}
+
+.bag{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/bagueImgPxl.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 40% 40% 0 0;
+}
+
+#bagLayer{
+    border-radius: 40% 40% 0 0;
+}
+.bag:hover{
+    cursor: pointer;
+}
+
+.erring{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/earringpex5.jpeg);
+    background-image: url(../pic/earringPxl.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 40% 0 0 0;
+}
+
+#earringLayer{
+    border-radius: 40% 0 0 0;
+}
+
+.erring:hover{
+    cursor: pointer;
+}
+
+.bracellete{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/braceletImgPxl.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 40% 0 0 0;
+}
+
+#braceletLayer{
+    border-radius: 40% 0 0 0;
+}
+
+.bracellete:hover{
+    cursor: pointer;
+}
+
+.loveAndEngagment{
+    width: 25%;
+    height: 45%;
+    background-image: url(../pic/weddingRingpex1.jpeg);
+    background-image: url(../pic/pexelsEngagedRing.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 0 0 0 40%;
+}
+
+#engagmentLayer{
+    border-radius: 0 0 0 40%;
+}
+
+.loveAndEngagment:hover{
+    cursor: pointer;
+}
+
+.info{
+    width: 25%;
+    height: 45%;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p{
+    font-size: 17px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.info button{
+    background: none;
+    border: solid 1px black;
+    padding: 5px 15px;
+    margin-top: 15px;
+    font-family: normal;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.info button:hover{
+    cursor: pointer;
+    background: whitesmoke;
+}
+
+
+
+.contact{
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2{
+    font-size: 50px;
+    margin-top: -10px;
+    color: orangered;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contact form input{
+    width: 300px;
+    height: 35px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    background-color:  #e8e0d4;
+    background: whitesmoke;
+}
+
+.contact form .formLeft{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+
+.contact form .formRight{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form .formRight #msginput{
+    padding-bottom: 60px;
+    word-wrap: break-word; /* Allow words to break onto the next line */
+    resize: vertical;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    background: whitesmoke;
+    border: none;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact form .formRight #sendInput{
+    width: 50px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin-left: 84%;
+    color: orangered;
+    font-weight: 600;
+    padding-right: 13px;
+
+}
+
+.contact form .formRight #sendInput:hover{
+    cursor: pointer;
+}
+
+
+                                /*about*/
+.about{
+    width: 100%;
+    height: 400px;
+    background: whitesmoke;
+    margin-top: 150px;
+}
+
+.aboutInf{
+    width: 80%;
+    height: 100%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.aboutLeft{
+    width: 70%;
+    height: 95%;
+    margin-right: 200px;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.aboutLeft  h3{
+    font-size: 40px;
+    font-family: normal;
+}
+
+.aboutLeft p{
+    margin-top: 50px;
+}
+
+.aboutLeft button{
+    margin-top: 50px;
+    background: none;
+    padding: 5px 10px;
+    border: solid 1px black;
+    font-family:normal;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.aboutLeft button:hover{
+    cursor: pointer;
+    background: whitesmoke;
+}
+
+
+.aboutImg{
+    width: 35%;
+    height: 100%;
+    border-radius: 45% 45% 0 0;
+    background-image:url(./pic/aboutpicpex3.jpeg) ;
+    /* background-image: url(./pic/homePageRigth.jpeg);
+    background-image:url(./pic/homepicpex6.jpeg) ; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+                            /*fin*/
+
+.fin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+
+.fin ul{
+    list-style: none;
+}
+
+.fin a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.521);
+}
+
+.fin a:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.865);
+}
+
+.fin li{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.fin h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bolder ;
+}
+
+.socialMedia ul{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.socialMedia ul li{
+    margin-left: 15px;
+}
+
+.socialMedia ul li i{
+    font-size: 20px;
+}
+
+hr{
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.myName{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.447);
+    margin-left: 40%;
+    margin-bottom: 30px;
+}
+
+.myName span{
+    margin-left: 10px;
+    word-spacing: 3px;
+}
+
+
+                                            /*about page*/
+
+.aboutpg{
+    display: flex;
+    flex-direction: row;
+    padding: 20PX 40px;
+    margin-top: 70px;
+}
+
+.aboutpginfo{
+    width: 65%;
+    margin-right: 20px;
+}
+
+.aboutpginfo h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.aboutpginfo p{
+    font-size: 20px;
+}
+
+.aboutpgimg{
+    width: 35%;
+    height: 90vh;
+    background-image: url(./pic/summerCo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.backcollectionImg{
+    width: 100%;
+    height: 60vh;
+    margin-top:-10px ;
+    display: flex;
+    flex-direction: row;
+}
+
+.collectionleft{
+    width: 50%;
+    height: 100%;
+    background-image: url(./pic/bijeux2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    color: white;
+}
+
+
+.collectionrigth{
+    width: 50%;
+    height: 100%;
+
+    background-image: url(./pic/contactImg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+
+.shopcollection{
+    width: 100%;
+    height:80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    margin-top: 40px;
+}
+
+.navBarCollection{
+    display: flex;
+    flex-direction: row;
+    border: solid 1px rgb(215, 214, 214);
+    height: 80px;
+    align-items: center;
+}
+
+.navBarCollection ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 70px;
+    
+}
+
+.navBarCollection ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight:  bolder;
+    background: whitesmoke;
+    border: solid 1px rgb(211, 211, 211);
+    border-radius: 20px;
+    padding: 3px 15px;
+}
+
+.navBarCollection ul li a:hover{
+    background: rgba(0, 0, 0, 0.909);
+    color:  white;
+}
+
+#shopall{
+    color: white;
+    background:rgba(85, 84, 84, 0.909) ;
+}
+
+.navBarCollection ul li{
+    margin-right: 10px;
+}
+
+.filter{
+    margin-left: 220px;
+}
+
+.filter button{
+    background: none;
+    border: none;
+}
+
+.filter button i{
+    margin-left: 8px;
+}
+
+.sort{
+    margin-left: 50px;
+}
+
+
+.sort select{
+    border: none;
+}
+
+
+.Collectionlink{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Collectionlink h3{
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+
+.Collectionlink a{
+    margin-left: 65%;
+}
+
+.Collectionlink button{
+    background: none;
+    border: none;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+}
+
+.Collectionlink button:hover{
+    cursor: pointer;
+}
+
+#nackLien{
+    margin-left: 68%;
+}
+
+#ringLien{
+    margin-left: 72%;
+}
+
+#earringLien{
+    margin-left: 70%;
+}
+
+#bracelletLien{
+    margin-left: 70%;
+}
+
+#engagdLien{
+    margin-left:60%;
+}
+
+
+
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
